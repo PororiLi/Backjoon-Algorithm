@@ -22,7 +22,6 @@ public class Main_1463 {
             }
         }
         System.out.println(dp[n]);
-
         br.close();
     } 
 }
