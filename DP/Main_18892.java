@@ -11,7 +11,7 @@ public class Main_18892 {
         int n = input_nk[0];
         int k = input_nk[1];
         int input_a[] = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        System.out.println(input_a[0]);
+        // System.out.println(input_a[0]);
 
         String lis_mem[][] = new String[n][n];
         
@@ -30,7 +30,7 @@ public class Main_18892 {
                             break;
                         }
                         is_mem.add(Integer.toString(input_a[i]) + " " + lis);
-                        System.out.println(is_mem);
+                        // System.out.println(is_mem);
                     }
 
                 }
@@ -38,11 +38,11 @@ public class Main_18892 {
 
             if(is_mem.isEmpty()) {
                 lis_mem[i][0] = Integer.toString(input_a[i]) + " ";;
-                System.out.println("is_mem size: 0, " + Integer.toString(input_a[i]));
+                // System.out.println("is_mem size: 0, " + Integer.toString(input_a[i]));
             }
             else {
                 int lis_mem_i = 0;
-                System.out.println("is_mem size:" + is_mem.size());
+                // System.out.println("is_mem size:" + is_mem.size());
                 for(String lis : is_mem){
                     lis_mem[i][lis_mem_i++] = lis;
                 }
@@ -79,7 +79,7 @@ public class Main_18892 {
         //     System.out.println("total_lis reArrange : " + total_lis[i++]);
 
         // }
-        System.out.println("total_lis.length-k : "+ (total_lis.size()-k));
+        // System.out.println("total_lis.length-k : "+ (total_lis.size()-k));
         if(k <= total_lis.size()) {
             System.out.println(total_lis.get(total_lis.size()-k).substring(0,5));
         } else {
